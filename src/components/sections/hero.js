@@ -3,6 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
+import { email } from '@config';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -19,7 +20,7 @@ const StyledHeroSection = styled.section`
 
   h1 {
     margin: 0 0 30px 4px;
-    color: var(--green);
+    color: var(--purple);
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 400;
@@ -59,29 +60,35 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-  const one = <h1>Hi, my name is</h1>;
-  const two = <h2 className="big-heading">Brittany Chiang.</h2>;
-  const three = <h3 className="big-heading">I build things for the web.</h3>;
+  const one = <h1>Hi!, my name is</h1>;
+  const two = <h2 className="big-heading">Vani Ruchika Pabba.</h2>;
+  const three = <h3 className="big-heading">I love turning innovative ideas into reality.</h3>;
   const four = (
     <>
       <p>
-        I’m a software engineer specializing in building (and occasionally designing) exceptional
-        digital experiences. Currently, I’m focused on building accessible, human-centered products
-        at{' '}
-        <a href="https://upstatement.com/" target="_blank" rel="noreferrer">
-          Upstatement
+        I'm a recent Computer Science graduate from the{' '}
+        <a href="https://www.ufl.edu/" target="_blank" rel="noreferrer">
+          University of Florida
+        </a>{' '}
+        with expertise in developing responsive, and scalable Full-Stack applications. My passion
+        lies in designing seamless user experiences, a talent I’ve put to practice at{' '}
+        <a href="https://www.infosys.com/" target="_blank" rel="noreferrer">
+          Infosys
         </a>
-        .
+        , where I contributed to building robust software solutions.{' '}
       </p>
     </>
   );
   const five = (
-    <a
-      className="email-link"
-      href="https://www.newline.co/courses/build-a-spotify-connected-app"
-      target="_blank"
-      rel="noreferrer">
-      Check out my course!
+    // <a
+    //   className="email-link"
+    //   href="https://www.newline.co/courses/build-a-spotify-connected-app"
+    //   target="_blank"
+    //   rel="noreferrer">
+    //   Check out my course!
+    // </a>
+    <a className="email-link" href={`mailto:${email}`}>
+      Contact Me
     </a>
   );
 
