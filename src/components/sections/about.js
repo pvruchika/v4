@@ -125,7 +125,18 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'JavaScript (ES6+)',
+    'TypeScript',
+    'React',
+    'Angular',
+    'Express',
+    'Node.js',
+    'MongoDB',
+    'Python',
+    'C++',
+    'Jenkins (CI/CD)',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -134,14 +145,52 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
-            <p>
+            {/* <p>
               Hello! My name is Ruchika and I enjoy creating things that live on the internet. My
               interest in web development started back in 2012 when I decided to try editing custom
               Tumblr themes — turns out hacking together a custom reblog button taught me a lot
               about HTML &amp; CSS!
+            </p> */}
+            <p>
+              Hello! My name is Ruchika and I enjoy building solutions that make a real difference.
+              With a strong foundation in React and Angular, I specialize in constructing end-to-end
+              feature components, optimizing code for efficiency, and troubleshooting for
+              performance enhancements.
+            </p>
+            <p>
+              My tech journey began with an internship at{' '}
+              <a href="https://www.infosys.com/">Infosys</a>, where I became an Infosys Certified
+              React Professional and received a Top Performer recognition and incentives at the
+              <a href="https://www.infosys.com/about/management-profiles/narayana-murthy.html">
+                Narayana Murthy Center of Excellence
+              </a>
+              .
+            </p>
+            <p>
+              With 2+ years experience at{' '}
+              <a href="https://www.infosysequinox.com/">Infosys Equinox</a>, I helped build a{' '}
+              <a href="https://www.infosysequinox.com/offerings/infosys-equinox-studio.html">
+                digital commerce platform
+              </a>{' '}
+              now used by 250+ brands. My contributions, including 40+ high-performing features,
+              were recognized with a{' '}
+              <a href="https://drive.google.com/file/d/1UKbJbITC_uEsZkNEFtnsahXganfzbY77/view?usp=sharing">
+                Spotlight Appreciation
+              </a>{' '}
+              Award.
+            </p>
+            {/* <p>
+              When not immersed in my computer, you'll find me exploring new realms of knowledge,
+              experimenting with culinary creations, or just simply embracing the beauty of the
+              great outdoors.
+            </p> */}
+            <p>
+              I’m currently seeking full-time positions as a Full Stack Developer/Software
+              Developer/Software Engineer, and I’m excited to bring my skills and contributions to a
+              new team.
             </p>
 
-            <p>
+            {/* <p>
               Fast-forward to today, and I’ve had the privilege of working at{' '}
               <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
               <a href="https://starry.com/">a start-up</a>,{' '}
@@ -159,9 +208,9 @@ const About = () => {
               </a>{' '}
               that covers everything you need to build a web app with the Spotify API using Node
               &amp; React.
-            </p>
+            </p> */}
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few technologies I’m familiar with:</p>
           </div>
 
           <ul className="skills-list">
