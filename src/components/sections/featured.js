@@ -322,7 +322,6 @@ const Featured = () => {
               tech
               github
               external
-              cta
             }
             html
           }
@@ -330,6 +329,7 @@ const Featured = () => {
       }
     }
   `);
+  //removed cta from above query ..below external.. it was extra button link. I do not need it.
 
   const featuredProjects = data.featured.edges.filter(({ node }) => node);
   const revealTitle = useRef(null);
